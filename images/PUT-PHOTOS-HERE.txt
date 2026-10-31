@@ -1,0 +1,1 @@
+Put your photos in this folder, then point the img tags in ../index.html at them (example: images/photo-1.jpg).

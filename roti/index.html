@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rosie’s Roti Shop | Chaguanas</title>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;800&family=Karla:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fdf3e1;--surface:#fff;--ink:#2b1608;--muted:#6b4a33;--red:#c8321e;--yellow:#f6c026;--line:#e6cfa8;--green:#2f7a3c;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1d130b;--surface:#2b1c10;--ink:#fbeed6;--muted:#d1b392;--line:#4a3320;--red:#ff7a5f}}
+:root[data-theme="dark"]{--bg:#1d130b;--surface:#2b1c10;--ink:#fbeed6;--muted:#d1b392;--line:#4a3320;--red:#ff7a5f}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.05rem/1.6 Karla,system-ui,sans-serif}
+h1,h2,h3{font-family:Rubik,Arial,sans-serif;margin:0;line-height:1.05}
+a{color:inherit}
+a:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+.top{background:var(--yellow);color:#2b1608;padding:1.2rem 0 2.5rem;border-bottom:.6rem solid var(--red)}
+.wrap{max-width:46rem;margin:0 auto;padding:0 1.25rem}
+header{display:flex;justify-content:space-between;align-items:center;gap:1rem;margin-bottom:1.5rem}
+.logo{font:800 1.2rem Rubik,sans-serif;text-decoration:none}
+nav a{margin-left:1rem;font-weight:700;text-decoration:none}
+h1{font-size:clamp(2.6rem,12vw,5rem);font-weight:800;letter-spacing:-.02em}
+.lead{max-width:30rem;font-size:1.15rem;margin:1rem 0 1.4rem}
+.cta{display:flex;flex-wrap:wrap;gap:.7rem}
+.btn{display:inline-block;background:var(--red);color:#fff;padding:.85rem 1.4rem;border-radius:.6rem;font-weight:700;text-decoration:none}
+.btn.alt{background:transparent;color:inherit;border:2px solid currentColor;padding:.75rem 1.3rem}
+.slider{position:relative;height:14rem;border-radius:1rem;overflow:hidden;margin-top:2rem;background:#fff2}
+.slide{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.4rem;opacity:0;transition:opacity .8s;color:#2b1608}
+.slide.on{opacity:1}
+.slide span{font-size:5.2rem;line-height:1}
+.slide b{font:800 1.25rem Rubik,sans-serif}
+.slide img,.tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+section{padding:2.2rem 0}
+section>h2,.wrap>section>h2{font-size:2.1rem;margin-bottom:1.1rem}
+.note{background:var(--green);color:#fff;border-radius:.8rem;padding:1rem 1.2rem;margin-bottom:1.2rem}
+.menu{list-style:none;margin:0;padding:0}
+.menu li{display:flex;align-items:baseline;gap:.6rem;padding:.8rem 0;border-bottom:1px solid var(--line)}
+.menu li>div{min-width:0}
+.name{font-weight:700}
+.desc{display:block;color:var(--muted);font-size:.95rem}
+.dots{flex:1;border-bottom:2px dotted var(--line);transform:translateY(-.25rem);min-width:1rem}
+.price{font-weight:700;white-space:nowrap}
+.gal{display:grid;grid-template-columns:repeat(2,1fr);gap:.8rem}
+.tile{position:relative;aspect-ratio:1;border-radius:.9rem;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.3rem;color:#2b1608;font-weight:700;text-align:center;padding:.5rem}
+.tile span{font-size:3.5rem;line-height:1}
+.info{display:grid;gap:1rem}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:.9rem;padding:1.2rem 1.3rem}
+.card h3{font-size:1.2rem;margin-bottom:.4rem}
+.card p{margin:.2rem 0;color:var(--muted)}
+.hours{width:100%;border-collapse:collapse}
+.hours td{padding:.15rem 0;color:var(--muted)}
+.hours td:last-child{text-align:right;color:var(--ink)}
+footer{padding:1.5rem 0 3rem;color:var(--muted);font-size:.95rem;border-top:1px solid var(--line)}
+footer a{margin-right:1rem}
+@media (min-width:40rem){.gal{grid-template-columns:repeat(3,1fr)}.info{grid-template-columns:1fr 1fr}.slider{height:18rem}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.slide{transition:none}}
+</style>
+</head>
+<body>
+<div class="top"><div class="wrap">
+<header><a class="logo" href="#">Rosie’s Roti Shop</a><nav><a href="#menu">Menu</a><a href="#visit">Visit</a></nav></header>
+<h1>Hot roti, made the Chaguanas way.</h1>
+<p class="lead">Dhalpuri and buss up shut made fresh all day. Curry chicken, goat, channa and aloo. Walk in hungry, leave happy.</p>
+<div class="cta"><a class="btn" href="https://maps.google.com/?q=Chaguanas+Trinidad">Get directions</a><a class="btn alt" href="tel:+18680000000">Call us</a></div>
+<div class="slider" aria-label="Photos of our food">
+<div class="slide on" style="background:#ffe08a"><span>🌯</span><b>Chicken roti</b></div>
+<div class="slide" style="background:#f9b9a8"><span>🍛</span><b>Goat curry</b></div>
+<div class="slide" style="background:#c9e7c1"><span>🫓</span><b>Buss up shut</b></div>
+<div class="slide" style="background:#ffd1a1"><span>🥘</span><b>Channa and aloo</b></div>
+<div class="slide" style="background:#f8e6a0"><span>🌶️</span><b>Our own pepper sauce</b></div>
+</div>
+</div></div>
+
+<div class="wrap">
+<section id="menu">
+<h2>Menu</h2>
+<div class="note">Every roti comes with your choice of pepper sauce and a cold drink special on weekdays.</div>
+<ul class="menu">
+<li><div><span class="name">Chicken roti</span><span class="desc">Dhalpuri, curry chicken, potato, channa</span></div><span class="dots"></span><span class="price">TT$40</span></li>
+<li><div><span class="name">Goat roti</span><span class="desc">Slow-cooked curry goat, bone-in or boneless</span></div><span class="dots"></span><span class="price">TT$55</span></li>
+<li><div><span class="name">Shrimp roti</span><span class="desc">Curried shrimp with potato</span></div><span class="dots"></span><span class="price">TT$65</span></li>
+<li><div><span class="name">Channa and aloo roti</span><span class="desc">Our vegetarian favourite</span></div><span class="dots"></span><span class="price">TT$30</span></li>
+<li><div><span class="name">Buss up shut and curry</span><span class="desc">Choose chicken, duck or goat</span></div><span class="dots"></span><span class="price">TT$50</span></li>
+<li><div><span class="name">Pholourie (6)</span><span class="desc">With tamarind or mango chutney</span></div><span class="dots"></span><span class="price">TT$10</span></li>
+<li><div><span class="name">Sorrel or mauby</span><span class="desc">Homemade, served cold</span></div><span class="dots"></span><span class="price">TT$10</span></li>
+</ul>
+</section>
+
+<section id="photos">
+<h2>From our kitchen</h2>
+<div class="gal">
+<div class="tile" style="background:#ffe08a"><span>🌯</span>Chicken roti</div>
+<div class="tile" style="background:#f9b9a8"><span>🍛</span>Goat curry</div>
+<div class="tile" style="background:#c9e7c1"><span>🫓</span>Buss up shut</div>
+<div class="tile" style="background:#ffd1a1"><span>🥘</span>Channa and aloo</div>
+<div class="tile" style="background:#f8e6a0"><span>🧆</span>Pholourie</div>
+<div class="tile" style="background:#f4c0c0"><span>🥤</span>Sorrel</div>
+</div>
+</section>
+
+<section id="visit">
+<h2>Come by</h2>
+<div class="info">
+<div class="card"><h3>Hours</h3><table class="hours">
+<tr><td>Mon to Sat</td><td>8 a.m. to 8 p.m.</td></tr>
+<tr><td>Sunday</td><td>9 a.m. to 4 p.m.</td></tr></table></div>
+<div class="card"><h3>Find us</h3><p>45 Example Road, Chaguanas</p><p>Call or WhatsApp: (868) 000-0000</p><p><a class="btn" style="margin-top:.6rem" href="https://maps.google.com/?q=Chaguanas+Trinidad">Get directions</a></p></div>
+</div>
+</section>
+</div>
+
+<footer><div class="wrap"><a href="https://instagram.com/">Instagram</a><a href="https://facebook.com/">Facebook</a><p>Sample site made to show what a local business page can look like.</p></div></footer>
+<script src="photos-list.js"></script>
+<script src="photos.js"></script>
+<script>
+(function(){var s=document.querySelectorAll('.slide'),i=0;if(s.length<2)return;setInterval(function(){s[i].classList.remove('on');i=(i+1)%s.length;s[i].classList.add('on')},5000)})();
+</script>
+</body>
+</html>
